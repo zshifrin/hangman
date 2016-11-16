@@ -3,19 +3,25 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hangman</title>
 </head>
 
 <body>
-    <h1>Hangman</h1>
+    <h1 class="text-center">Hangman</h1>
     <div id="pickLetter">
-        <h1>Avaialble Letters</h1>
+        <h1 class="text-center">Avaialble Letters</h1>
+        <div>
+
+        </div>
     </div>
     <div id="hangStatus">
-        <img src="img/hangman.png">
+        <img src="img/hangman.png" class="img-responsive center-block" alt="Responsive hangman image">
     </div>
     <div id="guessWord">
-        <h1>Guess the Word!</h1>
+        <h1 class="text-center">Guess the Word!</h1>
     </div>
     <script type="text/javascript" src="js/hangman.js"></script>
 </body>
