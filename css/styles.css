@@ -1,3 +1,5 @@
+
+
 ul {
 	list-style-type: none;
 	display: block;
@@ -15,3 +17,12 @@ ul {
 	border: 2px solid black;
 }
 
+.used {
+	background: #a8aeb7;
+	color: red;
+}
+
+#guessWord {
+	font-size: 30px;
+	letter-spacing: 2px;
+}
