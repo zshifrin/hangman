@@ -6,24 +6,35 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hangman</title>
+    <title>HangWook</title>
 </head>
 
 <body>
-    <h1 class="text-center">Hangman</h1>
+
+    <h1 class="text-center">HangWookie</h1>
     <div class="row">
-	    <div id="pickLetter" class="col-md-6">
-	        <h1 class="text-center">Avaialble Letters</h1>
-	        <div id="abcBtns">
-	        </div>
-	    </div>
-	    <div id="hangStatus" class="col-md-6">
-	        <img src="img/hangman.png" class="img-responsive center-block" alt="Responsive hangman image">
-	    </div>
-	</div>
+        <div id="pickLetter" class="col-md-6">
+            <h1 class="text-center">Avaialble Letters</h1>
+            <div id="abcBtns">
+            </div>
+        </div>
+        <div id="hangStatus" class="col-md-6">
+            <img id="hanger" src="img/1.png" class="img-responsive center-block" alt="Responsive hangman image">
+        </div>
+    </div>
     <h2 class="text-center">Guess the Word!</h2>
     <div id="guessWord" class="text-center">
     </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <p id="loss">Congratulations, you just hung a Wookie.</p>
+            <p id="win">Pity, another free Wookie roaming the Empire.</p>
+            <div id="respawn">Click to Play Again</div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/hangman.js"></script>
 </body>
